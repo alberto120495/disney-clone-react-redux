@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import db from "../firebase";
 import { selectUserName } from "../features/user/userSlice";
 import ImgSlider from "./ImgSlider";
+import Viewers from "./Viewers";
 
 function Home() {
   const dispatch = useDispatch();
@@ -11,6 +12,7 @@ function Home() {
   return (
     <Container>
       <ImgSlider />
+      <Viewers />
     </Container>
   );
 }
